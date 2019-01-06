@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+<div class="container">
+    <div th:replace="fragments/header :: header"></div>
+    <div class="container">
+        <form class="form-horizontal" th:action="@{/find/}" name="find_form" id="find_form"
+              method="post" role="form">
+
+            <div class="form-group">
+                <label class="form-check-label" for="necessary">Введите наименование детали</label>
+                <input type="text" class="form-control" id="name" th:name="name" placeholder="наименование детали:" maxlength="100" style="width: 400px"/>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="text-align:center; background-color:#cf6a00">Поиск</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

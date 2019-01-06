@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="header">
+    <nav class="navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" th:href="@{/index}">Комплектующие</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="#" th:href="@{/new}">Добавить</a></li>
+                    <li><a href="#" th:href="@{/search}">Поиск</a></li>
+                </ul>
+                <lavbel style="font-size:12px;color:#ffffff; position:absolute; right:100px; top:10px">Test task JavaRush from ADN</lavbel>
+            </div>
+        </div>
+    </nav>
+</div>
+</html>
